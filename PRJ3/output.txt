@@ -1,0 +1,131 @@
+Assembling Program...
+
+Program Assembled
+/* Input value */
+5
+PC = 0 | A = 5 | DM = [0, 0, 0]
+
+/* Storing accumulator to memory location 0 */
+PC = 1 | A = 5 | DM = [5, 0, 0]
+
+/* Input value */
+5
+PC = 2 | A = 5 | DM = [5, 0, 0]
+
+/* Adding 5 to accumulator value */
+PC = 3 | A = 10 | DM = [5, 0, 0]
+
+/* Outputting accumulator to screen */
+10
+PC = 4 | A = 10 | DM = [5, 0, 0]
+
+/* Storing accumulator to memory location 1 */
+PC = 5 | A = 10 | DM = [5, 10, 0]
+
+/* Subtracting 5 from accumulator value */
+PC = 6 | A = 5 | DM = [5, 10, 0]
+
+/* Subtracting 5 from accumulator value */
+PC = 7 | A = 0 | DM = [5, 10, 0]
+
+/* Storing accumulator to memory location 2 */
+PC = 8 | A = 0 | DM = [5, 10, 0]
+
+/* Outputting accumulator to screen */
+0
+PC = 9 | A = 0 | DM = [5, 10, 0]
+
+/* Skip next line */
+PC = 10 | A = 0 | DM = [5, 10, 0]
+
+/* Loading accumulator from memory location 1 */
+PC = 12 | A = 10 | DM = [5, 10, 0]
+
+/* Subtracting 5 from accumulator value */
+PC = 13 | A = 5 | DM = [5, 10, 0]
+
+/* Storing accumulator to memory location 1 */
+PC = 14 | A = 5 | DM = [5, 5, 0]
+
+/* Skip next line */
+PC = 15 | A = 5 | DM = [5, 5, 0]
+
+/* Jumping program to PC 13 */
+PC = 16 | A = 5 | DM = [5, 5, 0]
+
+/* Subtracting 5 from accumulator value */
+PC = 13 | A = 0 | DM = [5, 5, 0]
+
+/* Storing accumulator to memory location 1 */
+PC = 14 | A = 0 | DM = [5, 0, 0]
+
+/* Skip next line */
+PC = 15 | A = 0 | DM = [5, 0, 0]
+
+Program has ended
+PC = 17 | A = 0 | DM = [5, 0, 0]Assembling Program...
+
+Program Assembled
+/* Input value */
+5
+PC = 0 | A = 5 | DM = [0, 0, 0]
+
+/* Storing accumulator to memory location 0 */
+PC = 1 | A = 5 | DM = [5, 0, 0]
+
+/* Input value */
+5
+PC = 2 | A = 5 | DM = [5, 0, 0]
+
+/* Adding 5 to accumulator value */
+PC = 3 | A = 10 | DM = [5, 0, 0]
+
+/* Outputting accumulator to screen */
+10
+PC = 4 | A = 10 | DM = [5, 0, 0]
+
+/* Storing accumulator to memory location 1 */
+PC = 5 | A = 10 | DM = [5, 10, 0]
+
+/* Subtracting 5 from accumulator value */
+PC = 6 | A = 5 | DM = [5, 10, 0]
+
+/* Subtracting 5 from accumulator value */
+PC = 7 | A = 0 | DM = [5, 10, 0]
+
+/* Storing accumulator to memory location 2 */
+PC = 8 | A = 0 | DM = [5, 10, 0]
+
+/* Outputting accumulator to screen */
+0
+PC = 9 | A = 0 | DM = [5, 10, 0]
+
+/* Skip next line */
+PC = 10 | A = 0 | DM = [5, 10, 0]
+
+/* Loading accumulator from memory location 1 */
+PC = 12 | A = 10 | DM = [5, 10, 0]
+
+/* Subtracting 5 from accumulator value */
+PC = 13 | A = 5 | DM = [5, 10, 0]
+
+/* Storing accumulator to memory location 1 */
+PC = 14 | A = 5 | DM = [5, 5, 0]
+
+/* Skip next line */
+PC = 15 | A = 5 | DM = [5, 5, 0]
+
+/* Jumping program to PC 13 */
+PC = 16 | A = 5 | DM = [5, 5, 0]
+
+/* Subtracting 5 from accumulator value */
+PC = 13 | A = 0 | DM = [5, 5, 0]
+
+/* Storing accumulator to memory location 1 */
+PC = 14 | A = 0 | DM = [5, 0, 0]
+
+/* Skip next line */
+PC = 15 | A = 0 | DM = [5, 0, 0]
+
+Program has ended
+PC = 17 | A = 0 | DM = [5, 0, 0]

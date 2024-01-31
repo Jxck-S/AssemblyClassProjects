@@ -1,0 +1,97 @@
+﻿/ 4 Digit Multiplier A, B, C, D No negatives, 
+/ Jack Sweeney UCF Fall 2023
+//LOAD A,B,C,D and check if positive.
+//A
+Input
+Output
+Store A
+Skipcond 800
+Jump zeroed
+
+//B
+Input
+Output
+Store B
+Skipcond 800
+Jump zeroed
+
+//C
+Input
+Output
+Store C
+Skipcond 800
+Jump zeroed
+
+//D
+Input
+Output
+Store D
+Skipcond 800
+Jump zeroed
+
+//Multiply A * B
+LOAD A
+STORE M1
+LOAD B
+STORE M2
+JnS Multi
+LOAD res
+STORE AB
+
+//Multiply  C * D
+LOAD C
+STORE M1
+LOAD D
+STORE M2
+JnS Multi
+LOAD res
+STORE CD
+
+//Multiplication of M1 x M2
+LOAD AB
+STORE M1
+LOAD CD
+STORE M2
+JnS Multi
+LOAD res
+STORE Z
+LOAD Z
+OUTPUT
+HALT
+
+
+//Outputs zero and exits
+zeroed, CLEAR
+		OUTPUT
+		HALT
+
+
+
+//Multiplication.
+Multi, HEX 0
+    CLEAR
+    STORE res
+Loop, LOAD res
+    ADD M1
+    STORE res
+    LOAD M2
+    SUBT ONE
+    STORE M2
+    SKIPCOND 400
+    JUMP Loop
+    JUMPI Multi
+
+//Vars
+A, DEC 0
+B, DEC 0
+C, DEC 0
+D, DEC 0
+Z, DEC 0
+AB, DEC 0
+CD, DEC 0
+ONE, DEC 1
+res, DEC 0
+M1, DEC 0
+M2, DEC 0
+
+END

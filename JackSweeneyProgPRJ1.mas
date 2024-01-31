@@ -1,0 +1,82 @@
+﻿/ 3 Digit Multiplier A, B, C, No negatives,
+/ Jack Sweeney UCF Fall 2023
+
+//A
+Input
+Output
+Store A
+//B
+Input
+Output
+Store B
+//C
+Input
+Output
+Store C
+
+/ Check if positives which is good to continue
+Load A
+/ Good for A?
+Skipcond 800
+Jump zeroed
+
+Load B
+/ Good for B?
+Skipcond 800
+Jump zeroed
+
+Load C
+/ Good for C?
+Skipcond 800
+Jump zeroed
+
+Jump loop_a_b
+
+
+/ Loop for multiplying A and B
+loop_a_b,    Load inter_result
+             Add A
+             Store inter_result
+
+             Load B
+             Subt one
+             Store B
+
+             Skipcond 400 / exit loop when completed
+             Jump loop_a_b
+
+Jump loop_result_c
+
+/ Loop for multiplying result and C
+loop_result_c,   Load z
+                 Add inter_result
+                 Store z
+
+                 Load C
+                 Subt one
+                 Store C
+
+                 Skipcond 400 / exit loop when completed
+                 Jump loop_result_c
+
+
+Jump final
+/ Output result then halt program
+final,    Load z
+         Output	
+         Halt
+
+
+
+zeroed, Clear
+		Output
+		Halt
+        
+        
+/ Vars  
+A, DEC 0
+B, DEC 0
+C, DEC 0
+one, DEC 1
+inter_result, DEC 0
+z, DEC 0
